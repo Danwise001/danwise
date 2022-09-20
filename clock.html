@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="clock.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url(./img/bck.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 100hv;
+        margin: 0;
+        font-family: "poppins", sans-serif;
+        color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 150px;
+      }
+
+      h1 {
+        font-size: 2.9rem;
+        font-weight: bolder;
+        background-color: #fff;
+        color: black;
+        padding: 5px 70px;
+        border: 1px;
+        border-radius: 20px;
+        /* box-shadow: 2px 10px 30px 10px rgba(rgba(238, 12, 12, 0.493)); */
+        box-shadow: 10px 10px 15px rgba(128, 128, 128, 0.801);
+      }
+      .countdown-container {
+        display: flex;
+        /* flex-direction: row; */
+      }
+
+      .big-text {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1;
+        margin: 1.2rem 2rem 0 2rem;
+      }
+
+      .countdown-El {
+        text-align: center;
+      }
+
+      .countdown-cl span {
+        font-size: 1.5rem;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nigeria Days & Time</h1>
+    <div class="countdown-container">
+      <div class="countdown-El days-c">
+        <p class="big-text" id="days">0</p>
+        <span>days</span>
+      </div>
+      <!-- </div> -->
+
+      <!-- <div class="countdown-container"> -->
+      <div class="countdown-El hours-c">
+        <p class="big-text" id="hours">0</p>
+        <span>hours</span>
+      </div>
+      <!-- </div> -->
+
+      <!-- <div class="countdown-container"> -->
+      <div class="countdown-El mins-c">
+        <p class="big-text" id="mins">0</p>
+        <span>mins</span>
+      </div>
+      <!-- </div> -->
+
+      <!-- <div class="countdown-container"> -->
+      <div class="countdown-El second-c">
+        <p class="big-text" id="seconds">0</p>
+        <span>seconds</span>
+      </div>
+    </div>
+  </body>
+</html>
